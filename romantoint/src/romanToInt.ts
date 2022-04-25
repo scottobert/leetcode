@@ -1,50 +1,29 @@
 export function romanToInt(s: string): number {
+    const digitMap: { [key: string]: number } = {
+        I: 1,
+        V: 5,
+        X: 10,
+        L: 50,
+        C: 100,
+        D: 500,
+        M: 1000,
+        IV: 4,
+        IX: 9,
+        XL: 40,
+        XC: 90,
+        CD: 400,
+        CM: 900
+    };
+
     var retVal = 0;
     for (var i = 0; i < s.length; i++) {
-        if (s[i] === "I" && s[i + 1] === "V") {
-            retVal += 4;
+        const currentAndNext = s[i] + s[i + 1];
+        if (digitMap[currentAndNext] != null) {
+            retVal += digitMap[currentAndNext];
             i++;
         }
-        else if (s[i] === "I" && s[i + 1] === "X") {
-            retVal += 9;
-            i++;
-        }
-        else if (s[i] === "X" && s[i + 1] === "L") {
-            retVal += 40;
-            i++;
-        }
-        else if (s[i] === "X" && s[i + 1] === "C") {
-            retVal += 90;
-            i++;
-        }
-        else if (s[i] === "C" && s[i + 1] === "D") {
-            retVal += 400;
-            i++;
-        }
-        else if (s[i] === "C" && s[i + 1] === "M") {
-            retVal += 900;
-            i++;
-        }
-        else if (s[i] === "I") {
-            retVal += 1;
-        }
-        else if (s[i] === "V") {
-            retVal += 5;
-        }
-        else if (s[i] === "X") {
-            retVal += 10;
-        }
-        else if (s[i] === "L") {
-            retVal += 50;
-        }
-        else if (s[i] === "C") {
-            retVal += 100;
-        }
-        else if (s[i] === "D") {
-            retVal += 500;
-        }
-        else if (s[i] === "M") {
-            retVal += 1000;
+        else {
+            retVal += digitMap[s[i]];
         }
     }
     return retVal;
