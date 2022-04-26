@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/romantoint" # directory with package.json/package-lock.json
+    schedule:
+      interval: "daily"
