@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - romantoint/**
 defaults:
   run:
     working-directory: romantoint
