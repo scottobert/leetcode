@@ -3,9 +3,14 @@
   "version": "0.0.1",
   "description": "Utility functions for working with Roman Numerals",
   "main": "dist/index.js",
+  "files": ["/dist/**/*.{js,map}"],
   "scripts": {
     "test": "ts-mocha",
-    "build": "tsc"
+    "build": "tsc",
+    "semantic-release": "semantic-release"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
