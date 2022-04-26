@@ -1,6 +1,6 @@
 {
   "name": "@scottobert/roman-numerals",
-  "version": "0.0.1",
+  "version": "1.1.0",
   "description": "Utility functions for working with Roman Numerals",
   "main": "dist/index.js",
   "scripts": {
