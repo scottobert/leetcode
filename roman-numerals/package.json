@@ -1,5 +1,5 @@
 {
-  "name": "@scottobert/romantoint",
+  "name": "@scottobert/roman-numerals",
   "version": "1.0.0",
   "description": "Given a roman numeral, convert it to an integer.",
   "main": "dist/index.js",
