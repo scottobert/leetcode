@@ -28,6 +28,13 @@ npm install
 npm run test
 ```
 
+## Usage
+```ts
+import { romanToInt } from "../src";
+
+console.log(romanToInt("MCMXCIV")); // 1994
+```
+
 ## Author
 
 👤 **Scott Obert**
