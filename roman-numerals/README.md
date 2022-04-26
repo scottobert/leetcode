@@ -30,7 +30,7 @@ npm run test
 
 ## Usage
 ```ts
-import { romanToInt } from "../src";
+import { romanToInt } from "@scottobert/roman-numerals";
 
 console.log(romanToInt("MCMXCIV")); // 1994
 ```
