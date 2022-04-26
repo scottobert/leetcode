@@ -1,6 +1,6 @@
 {
   "name": "@scottobert/roman-numerals",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Given a roman numeral, convert it to an integer.",
   "main": "dist/index.js",
   "scripts": {
