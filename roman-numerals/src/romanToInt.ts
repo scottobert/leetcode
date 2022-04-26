@@ -15,12 +15,17 @@ export function romanToInt(s: string): number {
         CM: 900
     };
 
-    var retVal = 0;
+    let retVal = 0;
+    let skipNext = false;
     for (var i = 0; i < s.length; i++) {
+        if(skipNext) {
+            skipNext = false;
+            continue;
+        }
         const currentAndNext = s[i] + s[i + 1];
         if (digitMap[currentAndNext] != null) {
             retVal += digitMap[currentAndNext];
-            i++;
+            skipNext = true;
         }
         else {
             retVal += digitMap[s[i]];
