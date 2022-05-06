@@ -1,6 +1,0 @@
-version: 2
-updates:
-  - package-ecosystem: "npm"
-    directory: "/roman-numerals" # directory with package.json/package-lock.json
-    schedule:
-      interval: "daily"
