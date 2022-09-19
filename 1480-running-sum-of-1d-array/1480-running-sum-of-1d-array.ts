@@ -1,11 +1,8 @@
 function runningSum(nums: number[]): number[] {
     const result = [];
-    for(let i = 0; i < nums.length; i++) {
-        if (i === 0) {
-            result[i] = nums[i];
-        } else {
-            result[i] = result[i-1] + nums[i];
-        }
+    result[0] = nums[0];
+    for(let i = 1; i < nums.length; i++) {
+        result[i] = result[i-1] + nums[i];
     }
     return result;
 };
