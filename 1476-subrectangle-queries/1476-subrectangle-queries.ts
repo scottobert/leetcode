@@ -1,7 +1,5 @@
 class SubrectangleQueries {
-    rectangle: number[][];
-    constructor(rectangle: number[][]) {
-        this.rectangle = rectangle;
+    constructor(private rectangle: number[][]) {
     }
 
     updateSubrectangle(row1: number, col1: number, row2: number, col2: number, newValue: number): void {
