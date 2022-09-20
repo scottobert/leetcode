@@ -1,3 +1,4 @@
 function getConcatenation(nums: number[]): number[] {
-    return [...nums, ...nums]
+    nums.forEach(n => nums.push(n));
+    return nums;
 };
