@@ -1,6 +1,6 @@
 function myAtoi(s: string): number {
-    const max = Math.pow(2, 31) - 1;
-    const min = Math.pow(-2, 31);
+    const max = 2147483647;
+    const min = -2147483648;
     const num = parseInt(s);
     if(isNaN(num)) {
         return 0;
