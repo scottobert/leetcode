@@ -1,0 +1,22 @@
+{
+  "name": "@scottobert/md5sum-typescript",
+  "version": "1.0.0",
+  "private": true,
+  "description": "md5sum implemented from scratch in TypeScript (Coding Challenge #120).",
+  "license": "GPL-2.0",
+  "bin": {
+    "md5sum-ts": "dist/cli.js"
+  },
+  "main": "dist/md5sum.js",
+  "types": "dist/md5sum.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/cli.ts",
+    "test": "node --require ts-node/register --test test/md5.test.ts test/md5sum.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
