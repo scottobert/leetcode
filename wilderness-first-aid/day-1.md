@@ -13,7 +13,7 @@
 |----------|----------|------------|
 | **AVPU** | Level of responsiveness | Alert · Verbal · Pain · Unresponsive |
 | **SAMPLE** | History | Signs/Symptoms · Allergies · Medications · Pertinent history · Last intake · Events |
-| **OPQRST** | Pain assessment | Onset · Provocation · Quality · Radiation · Severity · Time |
+| **LMNOPQRST** | Pain assessment | Location · Motion · Night · Onset · Provocation · Quality · Radiation · Severity · Time |
 | **DOTS** | Physical exam (hands-on) | Deformities · Open wounds · Tenderness · Swelling |
 | **SOAP** | Documentation | Subjective · Objective · Assessment · Plan |
 
@@ -81,12 +81,14 @@ Gather the chief complaint and history:
 - **L — Last oral intake** (food or drink)
 - **E — Events** leading up to the condition, injury, or illness
 
-### OPQRST — pain assessment
-*(Some instructors teach this with extra letters, but the core is OPQRST.)*
+### LMNOPQRST — pain assessment
+*(This is the LMNOPQRST variant taught in the course; the widely used core is OPQRST.)*
 
+- **L — Location:** where is the injury or pain?
+- **M — Motion:** is there any movement that makes it better or worse?
+- **N — Night:** does it prevent sleep at night?
 - **O — Onset:** when did it start? What were you doing?
-- **P — Provocation/Palliation:** anything that makes it better or worse? (Including
-  movement, and whether it prevents sleep at night.)
+- **P — Provocation/Palliation:** anything that makes it better or worse?
 - **Q — Quality:** what does it feel like (sharp, dull, burning, cramping)?
 - **R — Radiation:** does the pain travel anywhere?
 - **S — Severity:** rate it 0–10.
