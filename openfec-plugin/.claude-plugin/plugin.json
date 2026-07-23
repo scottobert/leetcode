@@ -1,0 +1,22 @@
+{
+  "name": "openfec",
+  "displayName": "OpenFEC Campaign Finance",
+  "version": "1.0.0",
+  "description": "Research U.S. federal campaign finance via the FEC's OpenFEC API: a bundled MCP server (candidates, committees, financial totals, filings, itemized contributions/disbursements/independent expenditures, elections), a research skill, slash commands, and a research subagent.",
+  "author": {
+    "name": "scottobert"
+  },
+  "homepage": "https://github.com/scottobert/leetcode/tree/main/openfec-plugin",
+  "repository": "https://github.com/scottobert/leetcode",
+  "license": "MIT",
+  "keywords": [
+    "fec",
+    "openfec",
+    "campaign-finance",
+    "elections",
+    "politics",
+    "pac",
+    "super-pac",
+    "mcp"
+  ]
+}
