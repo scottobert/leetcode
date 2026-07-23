@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Evaluation questions for openfec-mcp-server.
+
+  NOTE ON VERIFICATION: This server was built in an environment with no network
+  access to api.open.fec.gov (blocked by egress policy), so the answers below
+  could NOT be executed end-to-end against the live API during authoring. They
+  are drawn from stable, public FEC identifiers and documented API semantics
+  (permanent candidate/committee IDs, fixed enum meanings, pagination model).
+  Before using this file as an automated scoring key, re-run each question with
+  a live OPENFEC_API_KEY and confirm the expected answer. Questions tied to
+  documented codes/IDs are stable; any that depend on evolving totals should be
+  pinned to a specific completed cycle.
+-->
+<evaluation>
+  <qa_pair>
+    <question>Using the name lookup tool, resolve the FEC presidential candidate whose name matches "Obama, Barack" for his 2008/2012 campaigns. What is his 9-character FEC candidate ID?</question>
+    <answer>P80003338</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Look up the committee named "ActBlue" (the Democratic online contribution-processing conduit). What is its FEC committee ID?</question>
+    <answer>C00401224</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>In the OpenFEC committee master data, a Super PAC (an independent-expenditure-only committee) is identified by a single-letter committee_type code. Which code letter identifies these committees?</question>
+    <answer>O</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>When searching committees, which single-letter designation code identifies a candidate's principal campaign committee?</question>
+    <answer>P</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>In the independent-expenditures tool (Schedule E), a record's support_oppose_indicator can be one of two letters. Which letter indicates the expenditure was made to OPPOSE the candidate?</question>
+    <answer>O</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>When filtering FEC filings, which form type identifies the periodic financial report filed by a presidential campaign committee?</question>
+    <answer>F3P</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>The itemized contribution and disbursement tools (Schedules A and B) do not use page numbers because the datasets are too large. What pagination field name does a response return that must be passed back to retrieve the next block of results in this server?</question>
+    <answer>next_cursor</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>To bound an itemized Schedule A contribution query to the 2023-2024 election cycle, what integer value should be supplied for the two_year_transaction_period parameter?</question>
+    <answer>2024</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>In the candidate search tool, which single-letter value of the office filter restricts results to candidates for the U.S. Senate?</question>
+    <answer>S</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Look up the committee "WinRed" (the Republican online contribution-processing conduit) by name. What is its FEC committee ID?</question>
+    <answer>C00694323</answer>
+  </qa_pair>
+</evaluation>
