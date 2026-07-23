@@ -77,6 +77,17 @@ npm run dev          # tsx watch mode
 npx @modelcontextprotocol/inspector node dist/index.js   # interactive testing
 ```
 
+## Companion research skill
+
+An Agent Skill that drives this server for campaign-finance research lives at
+[`.claude/skills/openfec-research/`](../.claude/skills/openfec-research/SKILL.md).
+When you work in this repo with Claude Code it's auto-discovered; to use it
+anywhere, copy that folder into `~/.claude/skills/`. It encodes the research
+workflow (resolve names → IDs, pick the narrowest tool, bound itemized queries,
+follow cursor pagination) and a full FEC code reference, so answers avoid the
+common mistakes (unbounded schedule queries, guessed IDs, misread itemization
+thresholds).
+
 ## Notes on the API
 
 - **Pagination.** Most endpoints use page numbers (`page` / `per_page`, max 100).
